@@ -1,6 +1,6 @@
-import createPhoneNumber from "./createPhoneNumber.js";
+// import getAlphabetPosition from "./alphabetPosition.module.js";
+require("./alphabetPosition");
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+let testStr = "The sunset sets at twelve o' clock.";
 
-// console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]));
-console.log(createPhoneNumber(arr));
+getAlphabetPosition(testStr);
