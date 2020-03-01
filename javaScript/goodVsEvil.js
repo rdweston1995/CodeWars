@@ -3,7 +3,7 @@
 // console.log(goodVsEvil("0 0 0 0 0 10", "0 1 1 1 1 0 0"));
 // console.log(goodVsEvil("1 0 0 0 0 0", "1 0 0 0 0 0 0"));
 
-console.log(goodVsEvil1("1 1 1 1 1 1", "1 1 1 1 1 1 1"));
+console.log(goodVsEvil1('1 1 1 1 1 1', '1 1 1 1 1 1 1'));
 console.log(goodVsEvil1("0 0 0 0 0 10", "0 1 1 1 1 0 0"));
 console.log(goodVsEvil1("1 0 0 0 0 0", "1 0 0 0 0 0 0"));
 
@@ -71,7 +71,7 @@ function goodVsEvil1(good, evil) {
     if(total > 0) {
         return "Battle Result: Good triumphs over Evil";
     } else if( total < 0) { 
-        return "Battle Result: Evil eradicates all traces of Good";
+        return "Battle Result: Evil eradicates all trace of Good";
     } else {
         return "Battle Result: No victor on this battle field";
     }
