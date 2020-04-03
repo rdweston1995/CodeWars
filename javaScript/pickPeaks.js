@@ -17,19 +17,16 @@ function pickPeaks(arr) {
                     pos.push(i);
                     peaks.push(arr[i]);
                 } else if(arr[i] === arr[i + 1]){
-                    if(repeat !== i) {repeat === i}
-                    if(arr[repeat] > arr[i + 1]) {
+                    repeat = i;
+                    while(arr[i] === arr[repeat]) {
+                        repeat++;
+                    }
+                    if(arr[i] > arr[repeat]){
                         pos.push(i);
                         peaks.push(arr[i]);
                     }
                 }
-            } else if(arr[i] === arr[i - 1]){
-                if(repeat !== i) {repeat === i}
-                if(arr[repeat] > arr[i + 1]) {
-                    pos.push(i);
-                    peaks.push(arr[i]);
-                }
-            }
+            } 
         }
     }
 
